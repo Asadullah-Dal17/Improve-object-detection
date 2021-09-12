@@ -51,7 +51,10 @@ while True:
     if len(ref_point)==2:
         # print('drawing')
         cv2.rectangle(image, ref_point[0], ref_point[1], (200, 255, 0), 2)
-    
+        # cv2.circle(image, ref_point[0], 3, (0,200,0), 2)
+        # cv2.circle(image, ref_point[1], 3, (0,200,0), 2)
+        # cv2.circle(image, (ref_point[1][0], ref_point[0][1]), 3, (0,200,0), 2)
+        # cv2.circle(image, (ref_point[0][0], ref_point[1][1]), 3, (0,200,0), 2)
 
     # press 'r' to reset the window
     if key == ord("r"):
